@@ -48,7 +48,6 @@
 		FFD95CCE2995E180003666FE /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD95CCD2995E180003666FE /* CoinData.swift */; };
 		FFD95CD3299655B5003666FE /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD95CD2299655B5003666FE /* ChartVC.swift */; };
 		FFD95CDC299658F0003666FE /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = FFD95CDB299658F0003666FE /* Charts */; };
-		FFD95CDE2996B23A003666FE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD95CDD2996B23A003666FE /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,7 +92,6 @@
 		FFD95CC82995CF1E003666FE /* CoinDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetails.swift; sourceTree = "<group>"; };
 		FFD95CCD2995E180003666FE /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		FFD95CD2299655B5003666FE /* ChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
-		FFD95CDD2996B23A003666FE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +203,22 @@
 			path = ListView;
 			sourceTree = "<group>";
 		};
+		FF998DBA299AC1C2003F4D87 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FFD95CAA29949AA5003666FE /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		FF998DBB299AC1D4003F4D87 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FFD95CA529949AA5003666FE /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		FFD95C9029949AA2003666FE = {
 			isa = PBXGroup;
 			children = (
@@ -224,16 +238,15 @@
 		FFD95C9B29949AA2003666FE /* CryptoCoin */ = {
 			isa = PBXGroup;
 			children = (
+				FF998DBB299AC1D4003F4D87 /* Assets */,
+				FF998DBA299AC1C2003F4D87 /* Config */,
 				FF998DAD299AB13A003F4D87 /* Screens */,
 				FF069C4C29995BCC00DF0D7D /* Shared */,
 				FFD95CD729965818003666FE /* Extensions */,
 				FFD95CBB29958774003666FE /* Models */,
 				FFD95CB029952539003666FE /* Network */,
 				FFD95CC42995B2BC003666FE /* App */,
-				FFD95CA529949AA5003666FE /* Assets.xcassets */,
 				FFD95CA729949AA5003666FE /* LaunchScreen.storyboard */,
-				FFD95CAA29949AA5003666FE /* Info.plist */,
-				FFD95CDD2996B23A003666FE /* CustomView.swift */,
 			);
 			path = CryptoCoin;
 			sourceTree = "<group>";
@@ -425,7 +438,6 @@
 				FF069C592999E78800DF0D7D /* Observable.swift in Sources */,
 				FF998DB8299ABD1B003F4D87 /* ListView.swift in Sources */,
 				FFD95C9F29949AA2003666FE /* SceneDelegate.swift in Sources */,
-				FFD95CDE2996B23A003666FE /* CustomView.swift in Sources */,
 				FFD95CB8299585FB003666FE /* ApiError.swift in Sources */,
 				FFD95CD3299655B5003666FE /* ChartVC.swift in Sources */,
 				FFD95CBD2995878C003666FE /* Coin.swift in Sources */,
