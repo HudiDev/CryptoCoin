@@ -39,16 +39,12 @@ extension Api {
     func request<T: Decodable>(_ responseType: T.Type) async throws -> T {
         let session = URLSession.shared
         do {
-            let (data, urlResponse) = try await session.data(for: self.urlRequest)
-            print("[qusai]",self.urlRequest.url?.absoluteString ?? "")
-//            print("[qusai]",String(data: data, encoding: .utf8) ?? "")
-            print("status code of login req: \((urlResponse as! HTTPURLResponse).statusCode)")
+            let (data, _) = try await session.data(for: self.urlRequest)
             do {
                 let response = try JSONDecoder().decode(responseType, from: data)
                 return response
             } catch (let error) {
-                print("error is: \(error)")
-                throw APIError.failedSerialization
+                throw APIError.failedSerialization(error.localizedDescription)
             }
         } catch {
             throw APIError.requestFailed
