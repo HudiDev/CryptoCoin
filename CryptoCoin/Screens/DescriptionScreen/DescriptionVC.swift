@@ -8,7 +8,7 @@
 import UIKit
 
 
-class DescriptionVC: UIViewController {
+class DescriptionVC: BaseViewController {
     
     lazy var textView: UITextView = {
         let textView = UITextView()
@@ -18,7 +18,6 @@ class DescriptionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
         self.setupLabel()
     }
     
